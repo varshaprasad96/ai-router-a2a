@@ -89,7 +89,7 @@ The project consists of three main components:
 
 Watch a live demo of the orchestrator in action:
 
-[![asciicast](https://asciinema.org/a/725259.svg)](https://asciinema.org/a/725259)
+<a href="https://asciinema.org/a/725259" target="_blank"><img src="https://asciinema.org/a/725259.svg" /></a>
 
 Alternatively, you can play the demo locally:
 ```bash

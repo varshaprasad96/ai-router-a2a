@@ -168,6 +168,24 @@ The orchestrator uses **cosine similarity** with sentence embeddings to determin
 | "What is 15 + 27?" | Reasoner | 0.78 |
 | "Give me a brief overview" | Summarizer | 0.72 |
 
+### Live Routing Examples
+
+Here are real examples of the orchestrator making intelligent routing decisions:
+
+```bash
+[Planner] Selected tool: solve-math with score: 0.3306
+[Planner] Selected tool: summarize with score: 0.3908
+[Planner] Selected tool: summarize with score: 0.3364
+[Planner] Selected tool: solve-math with score: 0.3306
+[Planner] Selected tool: summarize with score: -0.0075
+[Planner] Selected tool: solve-math with score: 0.2623
+```
+
+Notice how the system:
+- **High scores (0.3+)**: Confident routing to the appropriate service
+- **Low scores (-0.0075)**: Less confident but still functional routing
+- **Consistent patterns**: Similar prompts get similar scores
+
 ## 🛠️ Technical Details
 
 ### Models Used
